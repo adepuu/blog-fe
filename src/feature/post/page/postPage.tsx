@@ -4,7 +4,6 @@ import { usePost } from "../hooks/usePosts";
 const PostPage: React.FC = () => {
   const { slug } = useParams();
   const { post, loading, error } = usePost(slug!);
-  console.log(post)
   return (
     <div>
       {loading ? (
